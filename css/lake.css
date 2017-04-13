@@ -1,0 +1,277 @@
+/*!
+ * 125 lake Custom CSS
+ * Cesar Niculescu 2014
+ */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f6f6f6;  
+}
+
+#gallery {
+  background-color: #f6f6f6;
+}
+
+a:hover {
+  -webkit-transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition:         all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #c29587;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 small {
+  color: #3a3b3f;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+h4 {
+  color: white;
+}
+
+.card {
+  background-color: white;
+  min-height: 565px;
+  margin-left: 15px;
+  margin-right: -15px;
+  padding-top: 20px;
+}
+
+.rard {
+  background-color: white;
+  min-height: 565px;
+  margin-right: 15px;
+  margin-left: -15px;
+  padding-top: 20px;
+}
+
+.mard {
+  background-color: white;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py {
+  padding-top: 30px;  
+}
+.py2 {
+  padding-top: 100px;  
+}
+
+#floors {
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  background-image: url(../img/lk-5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 120px;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.inner {
+  padding: 30px;
+}
+.navbar-inverse {
+  background-color: black;
+}
+.lk-img {
+  padding-bottom: 1.5em;
+}
+.buffer {
+  padding-top: 2em;
+}
+.cover-heading {
+  text-transform: none;
+  color: white;
+  font-size: 48px;
+}
+.btn-success {
+  color: white;
+  background-color: #3a3b3f;
+  border-color: #3a3b3f;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #c29587;
+  border-color: #c29587;
+}
+
+.btn-default {
+  color: white;
+  background-color: #e99a93;
+  background: rgba(0, 0, 0, 0);
+  border-color: white;
+  border-width: 2px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-color: white;
+  border-color: white;
+  border-width: 2px;
+}
+
+.navbar {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  min-height: 70px;
+  padding-top: 9px;
+  background-color: white;
+  border-bottom: 1px #3a3b3f;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #3a3b3f;
+}
+
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #c29587;
+  text-transform: none;
+}
+
+.navbar-brand a:hover {
+  color: #3a3b3f;
+}
+
+.navbar-nav > li > a {
+  color: #8f8f8f;
+}
+
+.navbar-nav > li > a:hover {
+  color: #c29587;
+  background-color: white;
+}
+
+.navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+  background-color: white;
+}
+
+ .navbar-nav > .active > a {
+  color: #c29587;
+}
+
+.feet {
+  background-color: #3a3b3f;
+  color: white;
+  padding: 40px;
+  min-height: 400px;
+  padding-bottom: 100px;
+}
+
+.addr {
+  padding-left: 100px;
+  font-size: 16px;
+}
+
+.feet a {
+  color: white;
+}
+
+.si {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+}
+
+@media (min-width: 768px) {
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+@media (min-width: 992px) {
+  .cover-container {
+    width: 700px;
+  }
+
+  .site-wrapper {
+    min-height: 900px;
+  }
+}
+@media (max-width: 1200px) { 
+.card {
+  min-height: 465px;
+}
+
+.rard {
+  background-color: white;
+  min-height: 465px;
+}
+}
+@media (max-width: 992px) {
+.card {
+  min-height: 0;
+  padding-bottom: 20px;
+  padding-right: -60px;
+}
+
+.rard {
+  background-color: white;
+  min-height: 165px;
+}
+}
+
+@media (max-width: 992px) {
+  .addr {
+    padding-left: 0px;
+  }
+
+  .py2 {
+    padding-top: 10px;
+  }
+}
+
+
